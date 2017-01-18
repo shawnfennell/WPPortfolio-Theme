@@ -1,0 +1,48 @@
+@-webkit-keyframes myfirst
+{
+	from {
+		background-position: 0% 0%;
+	}
+	to {
+		background-position: 0% 90%;
+	}
+}
+
+@-moz-keyframes myfirst
+{
+	from {
+		background-position: 0% 0%;
+	}
+	to {
+		background-position: 0% 90%;
+	}
+}
+
+@keyframes myfirst
+{
+	from {
+		background-position: 0% 0%;
+	}
+	to {
+		background-position: 0% 90%;
+	}
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	
+	background-image:url("infinitesky.png");
+	background-repeat:repeat-x;
+	background-position: top;
+	-webkit-animation: myfirst 100s linear 0 infinite alternate;
+	-moz-animation: myfirst 100s linear 0 infinite alternate;
+	animation: myfirst 100s linear 0 infinite alternate;
+}
+
+canvas{
+	position: fixed;
+	bottom:0;
+	left:0;
+	z-index:-1;
+}

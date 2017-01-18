@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>shawnfennell.com</title>
+		<link rel="stylesheet" type="text/css" href="http://www.shawnfennell.com/test/main.css">
+	</head>
+	<body>
+		<header>
+			<h1>shawnfennell.com</h1>
+			<h2>i want you to feel safe here</h2>
+			<nav>
+				<ul>
+					<li><a href="#">writings</a></li>
+					<li><a href="#">images</a></li>
+					<li><a href="#">video</a></li>
+					<li><a href="#">audio</a></li>
+					<li><a href="#">web</a></li>
+					<li><a href="#">stuff</a></li>
+					<li><a href="#">happenings</a></li>
+					<li><a href="#">about</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article>
+				<h3>This is my first Lorem Ipsum blog post</h3>
+				<p>Curabitur rhoncus lorem sem, ullamcorper sagittis enim finibus eu. Sed rutrum risus nisl, non efficitur nibh auctor quis. Aenean facilisis tellus ac nisi lobortis tincidunt. Vestibulum egestas nulla posuere, consectetur metus et, eleifend urna. Pellentesque consectetur viverra condimentum. In a augue cursus, iaculis augue vitae, sollicitudin quam. Maecenas lacinia nunc purus, eu tristique enim laoreet quis. Maecenas tristique euismod nisi, non dictum diam consequat at. Quisque at orci maximus, aliquam mauris et, aliquet leo.</p>
+				<p>In hac habitasse platea dictumst. Vestibulum ultrices diam magna, eget gravida erat ultrices at. Curabitur tristique lacus sed leo sodales, gravida lobortis urna feugiat. Donec tempus mollis tellus a viverra. Morbi condimentum iaculis sem, eget imperdiet elit congue non. Ut lacinia sapien tellus, aliquam iaculis lectus molestie id. Phasellus ornare maximus est sed lacinia. Duis maximus libero volutpat mi pulvinar, vitae tincidunt quam malesuada.</p>
+				<p>In hac habitasse platea dictumst. Vestibulum ultrices diam magna, eget gravida erat ultrices at. Curabitur tristique lacus sed leo sodales, gravida lobortis urna feugiat. Donec tempus mollis tellus a viverra. Morbi condimentum iaculis sem, eget imperdiet elit congue non. Ut lacinia sapien tellus, aliquam iaculis lectus molestie id. Phasellus ornare maximus est sed lacinia. Duis maximus libero volutpat mi pulvinar, vitae tincidunt quam malesuada.</p>
+				<p>Morbi porta dui sit amet felis dignissim mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis ex ut risus tincidunt lacinia. Pellentesque ut mollis diam, tempor dignissim tellus. Nulla at erat justo. Phasellus consequat, arcu in efficitur commodo, magna magna scelerisque quam, eget pretium arcu sapien non tellus. Proin maximus rhoncus magna ut sollicitudin.</p>
+				<p>In hac habitasse platea dictumst. Vestibulum ultrices diam magna, eget gravida erat ultrices at. Curabitur tristique lacus sed leo sodales, gravida lobortis urna feugiat. Donec tempus mollis tellus a viverra. Morbi condimentum iaculis sem, eget imperdiet elit congue non. Ut lacinia sapien tellus, aliquam iaculis lectus molestie id. Phasellus ornare maximus est sed lacinia. Duis maximus libero volutpat mi pulvinar, vitae tincidunt quam malesuada.</p>
+				<p>In hac habitasse platea dictumst. Vestibulum ultrices diam magna, eget gravida erat ultrices at. Curabitur tristique lacus sed leo sodales, gravida lobortis urna feugiat. Donec tempus mollis tellus a viverra. Morbi condimentum iaculis sem, eget imperdiet elit congue non. Ut lacinia sapien tellus, aliquam iaculis lectus molestie id. Phasellus ornare maximus est sed lacinia. Duis maximus libero volutpat mi pulvinar, vitae tincidunt quam malesuada.</p>
+				<p>Curabitur rhoncus lorem sem, ullamcorper sagittis enim finibus eu. Sed rutrum risus nisl, non efficitur nibh auctor quis. Aenean facilisis tellus ac nisi lobortis tincidunt. Vestibulum egestas nulla posuere, consectetur metus et, eleifend urna. Pellentesque consectetur viverra condimentum. In a augue cursus, iaculis augue vitae, sollicitudin quam. Maecenas lacinia nunc purus, eu tristique enim laoreet quis. Maecenas tristique euismod nisi, non dictum diam consequat at. Quisque at orci maximus, aliquam mauris et, aliquet leo.</p>
+				<p>Curabitur rhoncus lorem sem, ullamcorper sagittis enim finibus eu. Sed rutrum risus nisl, non efficitur nibh auctor quis. Aenean facilisis tellus ac nisi lobortis tincidunt. Vestibulum egestas nulla posuere, consectetur metus et, eleifend urna. Pellentesque consectetur viverra condimentum. In a augue cursus, iaculis augue vitae, sollicitudin quam. Maecenas lacinia nunc purus, eu tristique enim laoreet quis. Maecenas tristique euismod nisi, non dictum diam consequat at. Quisque at orci maximus, aliquam mauris et, aliquet leo.</p>
+				<p>Morbi porta dui sit amet felis dignissim mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis ex ut risus tincidunt lacinia. Pellentesque ut mollis diam, tempor dignissim tellus. Nulla at erat justo. Phasellus consequat, arcu in efficitur commodo, magna magna scelerisque quam, eget pretium arcu sapien non tellus. Proin maximus rhoncus magna ut sollicitudin.</p>
+			</article>
+		</main>
+		<footer>
+			<canvas id="moai" width="6000" height="800">This is what's up y'all.</canvas>
+		</footer>
+		<script>
+			var canv = document.getElementById("moai");
+			var context = canv.getContext("2d");
+			
+			var oceangrd = context.createLinearGradient(0,440,0,800);
+			oceangrd.addColorStop(0, "white");
+			oceangrd.addColorStop(0.6, "blue");
+			oceangrd.addColorStop(0.9, "teal");
+			context.beginPath();
+			context.rect(0,500,6000,800);
+			context.fillStyle = oceangrd;
+			context.fill();
+			context.closePath();
+			
+			var imageObj = new Image();
+			imageObj.onload = function(){
+				var sandpat = context.createPattern(imageObj, 'repeat');
+				context.beginPath();
+				context.moveTo(0,500);
+				context.lineTo(860,500);
+				context.bezierCurveTo(830,590,890,630,920,680);
+				context.bezierCurveTo(900,730,1040,770,1010,800);
+				context.lineTo(0,800);
+				context.lineTo(0,500);
+				context.fillStyle = sandpat;
+				context.fill();
+				context.closePath();
+			};
+			imageObj.src = 'http://www.shawnfennell.com/test/sand.jpg';
+		</script>
+	</body>
+</html>

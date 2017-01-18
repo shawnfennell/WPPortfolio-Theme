@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-image:url('images/infinitesky.png');
+background-repeat:repeat-x;
+-webkit-animation: myfirst 100s linear 0 infinite;
+-moz-animation: myfirst 100s linear 0 infinite;
+animation: myfirst 100s linear 0 infinite;
+}
+
+@-webkit-keyframes myfirst
+{
+	0% {
+		background-color: #6ef6ff;
+		background-position: 0% 0%;
+	}
+	50% {
+		background-color: #00169a;
+	}
+	100%{
+		background-color: #6ef6ff;
+		background-position: 0% 90%;
+	}
+}
+
+@-moz-keyframes myfirst
+{
+	0% {
+		background-color: #6ef6ff;
+		background-position: 0% 0%;
+	}
+	50% {
+		background-color: #00169a;
+	}
+	100%{
+		background-color: #6ef6ff;
+		background-position: 0% 90%;
+	}
+}
+
+@keyframes myfirst
+{
+	0% {
+		background-color: #6ef6ff;
+		background-position: 0% 0%;
+	}
+	50% {
+		background-color: #00169a;
+	}
+	100%{
+		background-color: #6ef6ff;
+		background-position: 0% 90%;
+	}
+}
+</style>
+</head>
+<body>
+<p>This is a test of the infinite sky system.</p>
+</body>
+</html>

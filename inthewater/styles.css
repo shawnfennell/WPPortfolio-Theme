@@ -1,0 +1,231 @@
+/**
+ * 
+ * MOSTLY LAYOUT
+ * 
+ * */
+*{
+  -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+
+body{
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  height: 70%;
+  overflow: hidden;
+}
+
+#r-img{
+  float: right;
+}
+
+header{
+  width: 70%;
+  text-align: right;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h1{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+footer{
+  position: absolute;
+  bottom: 0px;
+  left: 71%;
+}
+
+footer p{
+  float: right;
+}
+
+#water{
+  margin-left: 10%;
+}
+
+#main{
+  margin-top: 0;
+}
+
+ul{
+  margin-top: 0;
+}
+
+#logo{
+    position: relative;
+    top: 20px;
+}
+
+
+/*
+*
+*  MOSTLY TEXT STYLING
+*
+*/
+
+body{
+  background-color: rgb(0,171,156);
+}
+
+#main{
+    background-color: rgb(119, 242, 232);
+}
+
+ul p, ul li{
+	display: inline;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+p{
+	font-family: Arial;
+  color: rgb(0, 84, 75);
+}
+
+ul{
+	list-style: none;
+	font-size: 53.5%;
+	padding: 0;
+  text-align: justify;
+}
+
+h1{
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: right;
+  font-size: calc(5pt + 4.2vw);
+  letter-spacing: 2pt;
+  margin-bottom: 0;
+	padding-bottom: 0;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(0, 84, 75);
+}
+
+#in-the-water{
+  line-height: 65%;
+  letter-spacing: initial;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: calc(11pt + 8.7vw);
+  text-align: justify;
+  color: rgb(119, 242, 232);
+}
+
+#in-the-water::before{
+  content: "#"
+}
+
+.r-letter{
+  display: none;
+}
+
+footer p{
+	color: rgb(0, 84, 75);
+  font-family: 'Oswald', sans-serif;
+  font-size: 90%;
+}
+
+#logo-big, #logo-green, #logo-innovations{
+  text-transform: lowercase;
+}
+
+#logo-big, #logo-green{
+  font-size: 192%;
+  line-height: 105%;
+}
+
+#logo-innovations{
+  font-family: 'Quattrocento', serif;
+  font-size: 115%;
+  line-height: 90%;
+  letter-spacing: .8pt;
+}
+
+#logo-big{
+  color: rgb(0,171,156);
+}
+
+/*
+*
+*  FADEY PART
+*
+*/
+
+.fadeout {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    min-height: 5em;
+    background: -webkit-linear-gradient(
+        rgba(119, 242, 232, 0) 0%,
+        rgba(119, 242, 232, .85) 50%,
+        rgba(119, 242, 232, 1) 100%
+    ); 
+    background-image: -moz-linear-gradient(
+        rgba(119, 242, 232, 0) 0%,
+        rgba(119, 242, 232, .85) 50%,
+        rgba(119, 242, 232, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+        rgba(119, 242, 232, 0) 0%,
+        rgba(119, 242, 232, .85) 50%,
+        rgba(119, 242, 232, 1) 100%
+    );
+    background-image: linear-gradient(
+        rgba(119, 242, 232, 0) 0%,
+        rgba(119, 242, 232, .85) 50%,
+        rgba(119, 242, 232, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+        rgba(119, 242, 232, 0) 0%,
+        rgba(119, 242, 232, .85) 50%,
+        rgba(119, 242, 232, 1) 100%
+    );
+}
+
+/*
+*
+*  Adjustments for mobile
+*
+*/
+
+@media only screen and (max-width: 750px){
+
+  footer{
+    left: initial;
+    right: 45%;
+  }
+  
+  footer p{
+    float: left;
+  }
+ 
+  header{
+    min-width: 400px;
+  }
+  
+  h1{
+    
+  }
+  
+  in-the-water{
+    
+  }
+}
